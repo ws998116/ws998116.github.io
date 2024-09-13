@@ -55,9 +55,10 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/social.jpg',
+    image: '/static/img/social.jpg',
+    metadata: [{content: "Wyatt Smith's personal website with thoughts, ideas, and other stuff."}],
     navbar: {
-      title: 'Wyatt Smith',
+      // title: 'Wyatt Smith',
       logo: {
         alt: 'W',
         src: 'img/logo.svg',
