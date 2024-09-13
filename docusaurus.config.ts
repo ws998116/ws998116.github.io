@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic'
 const config: Config = {
   title: 'Wyatt Smith',
   tagline: '.............',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.svg',
 
   // Set the production url of your site here
   url: 'https://ws998116.github.io',
@@ -55,11 +55,11 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/social.jpg',
     navbar: {
       title: 'Wyatt Smith',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'W',
         src: 'img/logo.svg',
       },
       items: [
