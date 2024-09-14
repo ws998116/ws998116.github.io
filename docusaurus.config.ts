@@ -4,13 +4,9 @@ import type * as Preset from '@docusaurus/preset-classic'
 
 const config: Config = {
   title: 'Wyatt Smith',
-  tagline: '.............',
+  tagline: 'Thoughts, ideas, and other stuff',
   favicon: 'img/logo.svg',
-
-  // Set the production url of your site here
   url: 'https://ws998116.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
@@ -37,7 +33,7 @@ const config: Config = {
         docs: false,
         blog: {
           showReadingTime: true,
-          routeBasePath: '/',
+          routeBasePath: '/blog',
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
@@ -55,25 +51,29 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: '/static/img/social.jpg',
-    metadata: [{content: "Wyatt Smith's personal website with thoughts, ideas, and other stuff."}],
+    image: '/img/social.jpg',
+    metadata: [{ content: "Wyatt Smith's personal website with thoughts, ideas, and other stuff." }],
     navbar: {
-      // title: 'Wyatt Smith',
       logo: {
-        alt: 'W',
+        alt: 'Y',
         src: 'img/logo.svg',
       },
       items: [
-        // {to: '/', label: 'Blog', position: 'left'},
+        { to: '/blog', label: 'Blog', position: 'left' },
         {
           href: 'https://github.com/ws998116/ws998116.github.io',
-          label: 'Source',
+          label: 'GitHub',
           position: 'right',
         },
       ],
     },
     footer: {
       style: 'dark',
+      logo: {
+        src: 'img/logo.svg',
+        alt: 'Y',
+        height: 50,
+      },
       links: [],
       copyright: `Copyright © ${new Date().getFullYear()}`,
     },
