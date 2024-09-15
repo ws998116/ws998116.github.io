@@ -1,6 +1,7 @@
 import { themes as prismThemes } from 'prism-react-renderer'
 import type { Config } from '@docusaurus/types'
 import type * as Preset from '@docusaurus/preset-classic'
+import 'dotenv/config'
 
 const config: Config = {
   title: 'Wyatt Smith',
@@ -53,7 +54,7 @@ const config: Config = {
     [
       'posthog-docusaurus',
       {
-        apiKey: 'phc_tPQY6FDHGBosrMDvQUCL4Yzm25pKGJbNflCKNVtFmcO',
+        apiKey: process.env.POSTHOG_API_KEY,
         enableInDevelopment: true, // optional
       },
     ],
