@@ -49,6 +49,16 @@ const config: Config = {
     ],
   ],
 
+  plugins: [
+    [
+      'posthog-docusaurus',
+      {
+        apiKey: 'phc_tPQY6FDHGBosrMDvQUCL4Yzm25pKGJbNflCKNVtFmcO',
+        enableInDevelopment: true, // optional
+      },
+    ],
+  ],
+
   themeConfig: {
     // Replace with your project's social card
     image: '/img/social.jpg',
