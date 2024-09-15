@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic'
 const config: Config = {
   title: 'Wyatt Smith',
   tagline: 'Thoughts, ideas, and other stuff',
-  favicon: 'img/logo.svg',
+  favicon: 'img/favicon.ico',
   url: 'https://ws998116.github.io',
   baseUrl: '/',
 
