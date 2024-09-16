@@ -20,6 +20,10 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+      - name: create env file
+        run: |
+          touch .env
+          echo POSTHOG_API_KEY=${{ secrets.POSTHOG_API_KEY }} >> .env
       - name: Build website
         run: npm run build
 
