@@ -5,22 +5,37 @@ import Layout from '@theme/Layout'
 import HomepageFeatures from '@site/src/components/HomepageFeatures'
 import Heading from '@theme/Heading'
 
-import styles from './index.module.css'
+import styles from './index.module.scss'
+import { useEffect, useRef, useState } from 'react'
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext()
+
+  const mainRef = useRef(null)
+  const [isLoading, setIsLoading] = useState(true)
+  const [headerHeight, setHeaderHeight] = useState(1536)
+  const [bannerHeight, setBannerHeight] = useState(256)
+
+  useEffect(() => {
+    const tempHeaderHeight = Math.max(384, window.innerHeight)
+    setHeaderHeight(tempHeaderHeight)
+    setBannerHeight(Math.max(256, tempHeaderHeight / 2))
+    setIsLoading(false)
+    // mainRef.current.hidden = false
+  }, [])
+
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          Wyatt Smith
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" to="/blog">
-            Blog
-          </Link>
-        </div>
+    <header className={styles.heroBanner} style={{ minHeight: headerHeight }}>
+      <div
+        className={styles.heroBannerWrapper}
+        style={{
+          minHeight: bannerHeight,
+          display: isLoading ? 'none' : 'block',
+        }}
+      >
+        <h1>Hi, I'm Wyatt Smith</h1>
+        <h3 className={styles.first}>Software Engineer</h3>
+        <h3 className={styles.second}>Product Developer</h3>
       </div>
     </header>
   )
@@ -31,9 +46,9 @@ export default function Home(): JSX.Element {
   return (
     <Layout title={`Home`} description={siteConfig.tagline}>
       <HomepageHeader />
-      <main>
+      {/* <main>
         <HomepageFeatures />
-      </main>
+      </main> */}
     </Layout>
   )
 }

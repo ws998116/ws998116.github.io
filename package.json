@@ -19,11 +19,16 @@
     "@docusaurus/plugin-pwa": "^3.5.2",
     "@docusaurus/preset-classic": "3.5.2",
     "@mdx-js/react": "^3.0.0",
+    "autoprefixer": "^10.4.20",
     "clsx": "^2.0.0",
+    "docusaurus-plugin-sass": "^0.2.5",
+    "postcss": "^8.4.47",
     "posthog-docusaurus": "^2.0.1",
     "prism-react-renderer": "^2.3.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "sass": "^1.79.1",
+    "tailwindcss": "^3.4.11"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.5.2",

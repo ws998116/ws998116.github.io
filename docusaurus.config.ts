@@ -44,7 +44,7 @@ const config: Config = {
           onUntruncatedBlogPosts: 'warn',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: require.resolve('./src/css/custom.scss'),
         },
       } satisfies Preset.Options,
     ],
@@ -58,6 +58,17 @@ const config: Config = {
         enableInDevelopment: true, // optional
       },
     ],
+    'docusaurus-plugin-sass',
+    async function tailwind(context, options) {
+      return {
+        name: 'docusaurus-tailwindcss',
+        configurePostCss(postcssOptions) {
+          postcssOptions.plugins.push(require('tailwindcss'))
+          postcssOptions.plugins.push(require('autoprefixer'))
+          return postcssOptions
+        },
+      }
+    },
     [
       '@docusaurus/plugin-pwa',
       {
