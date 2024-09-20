@@ -88,7 +88,7 @@ const config: Config = {
           {
             tagName: 'meta',
             name: 'theme-color',
-            content: 'rgb(6, 148, 97)',
+            content: 'rgb(255, 255, 255)',
           },
           {
             tagName: 'meta',
@@ -109,7 +109,7 @@ const config: Config = {
             tagName: 'link',
             rel: 'mask-icon',
             href: '/img/logo.svg',
-            color: 'rgb(37, 194, 160)',
+            color: 'rgb(255, 255, 255)',
           },
           {
             tagName: 'meta',
