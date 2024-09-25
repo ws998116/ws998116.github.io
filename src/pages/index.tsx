@@ -34,8 +34,8 @@ function HomepageHeader() {
         }}
       >
         <h1>Hi, I'm Wyatt Smith</h1>
-        <h3 className={styles.first}>Software Engineer</h3>
-        <h3 className={styles.second}>Product Developer</h3>
+        <h4 className={styles.first}>Software Engineer</h4>
+        <h4 className={styles.second}>Product Developer</h4>
       </div>
     </header>
   )
