@@ -138,7 +138,7 @@ const config: Config = {
       items: [
         { to: '/blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/ws998116/ws998116.github.io',
+          href: 'https://github.com/ws998116',
           position: 'right',
           className: 'header-github-link',
         },
@@ -152,7 +152,7 @@ const config: Config = {
         height: 50,
       },
       links: [],
-      copyright: `Copyright © ${new Date().getFullYear()}`,
+      copyright: `Copyright © ${new Date().getFullYear()} <a href="https://github.com/ws998116/ws998116.github.io" target="_blank" rel="noopener noreferrer" /><p>Source</p></a>`,
     },
     prism: {
       theme: prismThemes.github,
