@@ -39,7 +39,7 @@
 
 .heroBanner h1 {
   font-size: calc(3rem + 2vw);
-  font-weight: 200;
+  font-style: italic;
   color: var(--ifm-color-secondary);
   text-align: left;
   @include fade-in('300ms');
@@ -49,7 +49,6 @@
 
 .heroBanner h4 {
   font-size: calc(1.2rem + 1vw);
-  font-weight: 200;
   color: var(--ifm-color-secondary);
   text-align: left;
   width: 100%;
