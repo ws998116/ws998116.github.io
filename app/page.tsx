@@ -104,7 +104,7 @@ function ProjectVideoMobile({ src }: ProjectVideoProps) {
           autoPlay
           loop
           muted
-          className="h-80 w-full cursor-zoom-in rounded-xl object-cover"
+          className="h-80 w-auto cursor-zoom-in rounded-xl object-cover"
         />
       </MorphingDialogTrigger>
       <MorphingDialogContainer>
@@ -250,7 +250,8 @@ export default function Personal() {
                     </p>
                   </div>
                   <p className="text-zinc-600 dark:text-zinc-400">
-                    {job.start} - {job.end}
+                    {job.start}
+                    {job.start !== job.end && ' - ' + job.end}
                   </p>
                 </div>
               </div>

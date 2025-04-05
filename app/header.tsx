@@ -1,5 +1,6 @@
 'use client'
 import { TextEffect } from '@/components/ui/text-effect'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export function Header() {
@@ -18,6 +19,9 @@ export function Header() {
         >
           Full Stack Engineer
         </TextEffect>
+      </div>
+      <div>
+        <Image src={'/logo.svg'} alt="logo" width={30} height={30} />
       </div>
     </header>
   )

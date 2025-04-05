@@ -31,17 +31,25 @@ export const PROJECTS: Project[] = [
   {
     name: 'Park Street Brethren Church App',
     description:
-      'A mobile app to listen to sermon recordings and download notes.',
+      "A side project I'm working on where you can listen to sermon recordings and download slides.",
     link: 'https://github.com/ws998116/psbc',
     video: '/psbc.mp4',
     id: 'project1',
   },
+  // {
+  //   name: 'Goldberry App',
+  //   description: 'Demo app for a local coffee shop.',
+  //   link: 'https://github.com/ws998116/goldberry-expo',
+  //   video: '/goldberry.mov',
+  //   id: 'project2',
+  // },
   {
-    name: 'Goldberry App',
-    description: 'Demo app for a local coffee shop.',
-    link: 'https://github.com/ws998116/goldberry-expo',
-    video: '/goldberry.mov',
-    id: 'project2',
+    name: 'Flite Test App',
+    description:
+      "A mobile app for Flite Test's video content and a virtual hangar for RC aircraft. Featuring a flight tracker where you can log flights using a Remote ID and your phone's Bluetooth!",
+    link: 'https://apps.apple.com/us/app/flite-test/id6447209095',
+    video: '/flitetest.mp4',
+    id: 'project3',
   },
 ]
 
@@ -61,6 +69,22 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     end: '2024',
     link: 'https://tritiumelectronics.com/',
     id: 'work2',
+  },
+  {
+    company: 'Collins Aerospace',
+    title: 'Computer Engineering Co-op',
+    start: '2019',
+    end: '2019',
+    link: 'https://www.collinsaerospace.com/',
+    id: 'work3',
+  },
+  {
+    company: 'Schaeffler Group',
+    title: 'Engineering Co-op',
+    start: '2017',
+    end: '2018',
+    link: 'https://www.schaeffler.com/en/',
+    id: 'work4',
   },
 ]
 
