@@ -55,12 +55,20 @@ export const PROJECTS: Project[] = [
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
+    company: 'Ashland Water Group',
+    title: 'Business Application Specialist',
+    start: '2025',
+    end: 'Present',
+    link: 'https://www.ashlandwatergroup.com/',
+    id: 'work5',
+  },
+  {
     company: 'Fin Feather Fur Outfitters',
     title: 'Full Stack Developer',
     start: '2024',
-    end: 'Present',
+    end: '2025',
     link: 'https://finfeatherfur.com',
-    id: 'work1',
+    id: 'work4',
   },
   {
     company: 'Tritium Electronics',
@@ -68,7 +76,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     start: '2021',
     end: '2024',
     link: 'https://tritiumelectronics.com/',
-    id: 'work2',
+    id: 'work3',
   },
   {
     company: 'Collins Aerospace',
@@ -76,7 +84,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     start: '2019',
     end: '2019',
     link: 'https://www.collinsaerospace.com/',
-    id: 'work3',
+    id: 'work2',
   },
   {
     company: 'Schaeffler Group',
@@ -84,7 +92,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     start: '2017',
     end: '2018',
     link: 'https://www.schaeffler.com/en/',
-    id: 'work4',
+    id: 'work1',
   },
 ]
 
